@@ -19,10 +19,9 @@ export const SignUpModal = ({ showModal, handleClose }) => {
 
             }).catch((error) => {
 
-                // Add your sign-up logic here
                 console.log(error);
 
-            });    // Close the modal after sign-up
+            });   
         handleClose();
     };
 
@@ -82,10 +81,10 @@ export const SignInModal = ({ showModal, handleClose }) => {
 
             }).catch((error) => {
 
-                // Add your sign-up logic here
+               
                 console.log(error);
 
-            });    // Close the modal after sign-up
+            });   
         handleClose();
     };
 
@@ -135,12 +134,10 @@ export const SignInModal = ({ showModal, handleClose }) => {
 export const SignOut = () => {
     signOut(auth)
       .then(() => {
-        // Sign-out successful
         console.log('User signed out!');
         
       })
       .catch((error) => {
-        // Handle sign-out error
         console.error('Sign-out failed:', error);
       });
   };
