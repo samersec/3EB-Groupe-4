@@ -1,9 +1,7 @@
 import React from 'react';
 import './Style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-/*********************** *
-<Route path="/buy/:productId" element={<SellableProducts />}/>
-/************************ */
+
 import { AuctionedProducts, SellableProducts } from './Products'
 import { Catalogue, Auctions } from './Catalogue'
 
